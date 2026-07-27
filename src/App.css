@@ -1,0 +1,20 @@
+h1 {
+  background-color: rgba(199, 213, 149, 0.962);
+}
+
+.bg-light {
+  background-color: #aaaaaa;
+  color: #222222;
+
+}
+.bg-dark{
+  background-color: #222222;
+  color: #aaaaaa;
+}
+
+.nav-link-dark , .navbar-brand-dark{
+  color: #fff !important ;
+}
+.nav-link-light, .navbar-brand-{
+  color: #222 !important ;
+}
