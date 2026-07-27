@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 import First from './First'
 import Second from './Second'
 import Layout from './components/Layout'
@@ -18,7 +18,7 @@ import ReduxPerson from './pages/ReduxPerson'
 
 const MyRoutes = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path='/' element={<First />} />
@@ -38,13 +38,13 @@ const MyRoutes = () => {
           
 
           <Route path='/redux/person' element={<ReduxPerson/>}/>
-          
+
           <Route path='*' element={<NotFound />} />
 
         </Route>
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
